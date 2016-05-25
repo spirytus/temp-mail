@@ -93,5 +93,4 @@ class TempMail(object):
 
         url = 'http://{0}/request/mail/id/{1}/format/json/'.format(
             self.api_domain, email_hash)
-        req = requests.get(url)
-        return req.json()
+        return requests.get(url)
